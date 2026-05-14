@@ -1,0 +1,33 @@
+/* Path: me/assets/css/components/contact.css */
+
+
+/* Contact should behave like a full panel, with footer pinned at bottom */
+#contact.contact{
+  min-height: calc(100svh - 58px); /* 58px header */
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0; /* so footer sits flush */
+}
+
+/* Let the main contact content take remaining space */
+#contact.contact > .container{
+  flex: 1 0 auto;
+  width: 100%;
+}
+
+/* Footer pinned to bottom of the contact panel */
+#contact.contact .site-footer{
+  margin-top: auto;
+  scroll-snap-align: none; /* prevent snap weirdness */
+}
+
+#contact{
+  position: relative;
+}
+
+.site-footer{
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  background-color: var(--bg);
+}

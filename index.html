@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="el" class="no-js">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title data-i18n="title">Web Developer — Business Websites & SEO | Manos Balotis</title>
+  <meta name="description"
+    content="I build modern business websites and help you get found on Google. Clean design, fast performance and real results." />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container nav">
+      <div class="leftnav">
+        <a class="brand terminal-logo" href="#top" aria-label="Go to top">
+          <span class="prompt">&gt;</span>
+          <span id="brandText"></span>
+          <span class="cursor">_</span>
+        </a>
+      </div>
+
+      <button class="menu" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false"
+        aria-controls="siteNav">
+        <span class="menu-lines" aria-hidden="true"></span>
+      </button>
+
+      <nav id="siteNav" class="site-nav" aria-label="Main navigation">
+        <a href="#work" data-nav data-i18n="nav_work">Work</a>
+        <a href="#services" data-nav data-i18n="nav_services">Services</a>
+        <a href="#approach" data-nav data-i18n="nav_approach">Approach</a>
+        <a href="#contact" data-nav data-i18n="nav_contact">Contact</a>
+        <div class="nav-controls">
+          <button class="toggle" id="langToggle" type="button" aria-label="Toggle language">
+            <span class="label" id="langLabel" aria-hidden="true">EN</span>
+          </button>
+          <button class="toggle" id="themeToggle" type="button" aria-label="Toggle theme">
+            <span class="ico" id="themeIcon" aria-hidden="true">☼</span>
+            <span class="label" id="themeLabel" data-i18n="theme_light">Light</span>
+          </button>
+        </div>
+      </nav>
+
+      <div class="backdrop" id="navBackdrop" hidden></div>
+
+      <div class="rightnav">
+        <button class="toggle" id="langToggleDesktop" type="button" aria-label="Toggle language">
+          <span class="label">EN</span>
+        </button>
+        <button class="toggle" id="themeToggleDesktop" type="button" aria-label="Toggle theme">
+          <span class="ico">☼</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="progress" aria-hidden="true"><i id="progressBar"></i></div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero" aria-label="Intro">
+      <div class="bgblocks" aria-hidden="true">
+        <div class="block scroll-float" data-speed="0.26" style="width:260px;height:160px;left:7%;top:18%;"></div>
+        <div class="block scroll-float" data-speed="0.32" style="width:190px;height:190px;left:74%;top:24%;"></div>
+        <div class="block scroll-float" data-speed="0.22" style="width:340px;height:120px;left:54%;top:72%;"></div>
+        <div class="block scroll-float" data-speed="0.28" style="width:150px;height:260px;left:16%;top:64%;"></div>
+      </div>
+
+      <div class="container hero-grid">
+        <div class="kicker scroll-float" data-speed="0.10" data-i18n="hero_kicker">Business websites • Google presence •
+          SEO basics</div>
+
+        <h1 id="heroTitle" class="scroll-float" data-speed="0.14" data-i18n="hero_h1" data-i18n-html>
+          Websites that bring you clients.<br />
+          Built with clarity.
+        </h1>
+
+        <p class="sub scroll-float" data-speed="0.08" data-i18n="hero_sub">
+          I design and build modern websites that help your business stand out,
+          get found online, and turn visitors into customers.
+        </p>
+
+        <div class="cta">
+          <a class="btn primary" href="#work" data-i18n="cta_work" data-i18n-html>View selected work <span class="arrow"
+              aria-hidden="true">→</span></a>
+          <a class="btn" href="#contact" data-i18n="cta_quote" data-i18n-html>Let's build your website <span
+              class="arrow" aria-hidden="true">↘</span></a>
+        </div>
+
+        <div class="hero-meta reveal">
+          <div class="meta-line">
+            <span class="mono" data-i18n="meta_focus">Focus</span>
+            <span class="muted" data-i18n="meta_focus_val">Business websites • Portfolio sites • Custom web tools</span>
+          </div>
+          <div class="meta-line">
+            <span class="mono" data-i18n="meta_based">Based</span>
+            <span class="muted" data-i18n="meta_based_val">Greece (remote friendly)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="scroll-float" data-speed="0.10" data-i18n="work_title">Selected work</h2>
+          <div class="hint scroll-float" data-speed="0.06" data-i18n="work_hint">Real projects for real businesses</div>
+        </div>
+
+        <div class="work-grid">
+
+          <div class="work-item reveal">
+            <div class="work-image work-image--placeholder" aria-label="Dietitian website preview"></div>
+            <div class="work-content">
+              <div class="work-title" data-i18n="work_diet_title">Dietitian Website — Local Business</div>
+              <div class="work-desc" data-i18n="work_diet_desc">A clean and trustworthy website designed to attract
+                local clients and clearly present services and booking options.</div>
+              <button class="work-cta" disabled aria-label="Dietitian website — coming soon"
+                data-i18n="work_diet_cta">Coming soon →</button>
+            </div>
+          </div>
+
+          <div class="work-item reveal">
+            <div class="work-image">
+              <picture>
+                <source srcset="assets/images/skyros_wood.webp" type="image/webp">
+                <img src="assets/images/skyros_wood.png" alt="Woodcarving business website preview" loading="lazy"
+                  width="640" height="376">
+              </picture>
+            </div>
+            <div class="work-content">
+              <div class="work-title" data-i18n="work_skyros_title">Woodcarving Website — Craft & Storytelling</div>
+              <div class="work-desc" data-i18n="work_skyros_desc">A storytelling-driven website that highlights
+                craftsmanship and builds a strong, memorable visual identity.</div>
+              <!-- TODO: replace with real URL -->
+              <a class="work-cta" href="https://balotis-woodcarving.emmbalotis2001.workers.dev" target="_blank" rel="noopener noreferrer"
+                data-i18n="work_skyros_cta">Visit website →</a>
+            </div>
+          </div>
+
+          <div class="work-item reveal">
+            <div class="work-image">
+              <picture>
+                <source srcset="assets/images/kotsifakis.webp" type="image/webp">
+                <img src="assets/images/kotsifakis.png" alt="Designer portfolio website preview" loading="lazy"
+                  width="640" height="377">
+              </picture>
+            </div>
+            <div class="work-content">
+              <div class="work-title" data-i18n="work_portfolio_title">Designer Portfolio — Visual Showcase</div>
+              <div class="work-desc" data-i18n="work_portfolio_desc">A visual-first portfolio built to present projects
+                clearly and communicate the designer's style with impact.</div>
+              <!-- TODO: replace with real URL -->
+              <a class="work-cta" href="https://manoskotsifakis.com" target="_blank" rel="noopener noreferrer"
+                data-i18n="work_portfolio_cta">Visit website →</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="scroll-float" data-speed="0.10" data-i18n="services_title">Services</h2>
+          <div class="hint scroll-float" data-speed="0.06" data-i18n="services_hint">Clear scope</div>
+        </div>
+
+        <div class="svc-list">
+          <div class="svc-row reveal">
+            <div class="svc-name" data-i18n="svc1_name">Website design & development</div>
+            <div class="svc-desc" data-i18n="svc1_desc">Modern, fast and mobile-first websites tailored to your business
+              and built to convert visitors into clients.</div>
+            <div class="svc-tag mono" data-i18n="svc1_tag">Website</div>
+          </div>
+          <div class="svc-row reveal">
+            <div class="svc-name" data-i18n="svc2_name">Google presence & SEO</div>
+            <div class="svc-desc" data-i18n="svc2_desc">Google Business Profile setup, basic SEO and structured content
+              to help customers find your business online.</div>
+            <div class="svc-tag mono" data-i18n="svc2_tag">SEO</div>
+          </div>
+          <div class="svc-row reveal">
+            <div class="svc-name" data-i18n="svc3_name">Custom web tools</div>
+            <div class="svc-desc" data-i18n="svc3_desc">Dashboards, tools and lightweight web apps built around your
+              workflow when a standard website is not enough.</div>
+            <div class="svc-tag mono" data-i18n="svc3_tag">Web app</div>
+          </div>
+          <div class="svc-row reveal">
+            <div class="svc-name" data-i18n="svc4_name">Digital menu & QR</div>
+            <div class="svc-desc" data-i18n="svc4_desc">A multilingual digital menu accessible via QR code — ideal for
+              restaurants, cafés and tavernas that want a clean, always up-to-date alternative to printed menus.</div>
+            <div class="svc-tag mono" data-i18n="svc4_tag">QR menu</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- APPROACH -->
+    <section id="approach">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="scroll-float" data-speed="0.10" data-i18n="approach_title">Approach</h2>
+          <div class="hint scroll-float" data-speed="0.06" data-i18n="approach_hint">How I work</div>
+        </div>
+
+        <div class="svc-list">
+          <div class="svc-row reveal">
+            <div class="svc-name" data-i18n="approach1_name">1. Understand your business</div>
+            <div class="svc-desc" data-i18n="approach1_desc">We define your goals, your audience and what your website
+              needs to achieve.</div>
+          </div>
+          <div class="svc-row reveal">
+            <div class="svc-name" data-i18n="approach2_name">2. Design & build</div>
+            <div class="svc-desc" data-i18n="approach2_desc">I create a clean, modern website tailored to your brand,
+              with strong structure and fast performance.</div>
+          </div>
+          <div class="svc-row reveal">
+            <div class="svc-name" data-i18n="approach3_name">3. Launch & improve</div>
+            <div class="svc-desc" data-i18n="approach3_desc">We go live with clarity, then refine where needed so the
+              site keeps working for your business.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="scroll-float" data-speed="0.10" data-i18n="contact_title">Contact</h2>
+          <div class="hint scroll-float" data-speed="0.06" data-i18n="contact_hint">Start your project</div>
+        </div>
+
+        <div class="kicker" data-i18n="contact_kicker">Let's build your website</div>
+        <h3 class="contact-title" data-i18n="contact_h">Need a website that looks sharp and works for your business?
+        </h3>
+        <p class="sub" data-i18n="contact_sub">Tell me a bit about your business and what you need. I'll reply with next
+          steps and a clear quote.</p>
+
+        <form class="form" id="contactForm" autocomplete="on">
+          <div class="row">
+            <label for="field-name" class="sr-only">Όνομα</label>
+            <input id="field-name" name="name" autocomplete="name" placeholder="Your name"
+              data-i18n-placeholder="ph_name" required />
+            <label for="field-email" class="sr-only">Email</label>
+            <input id="field-email" name="email" type="email" autocomplete="email" placeholder="Email"
+              data-i18n-placeholder="ph_email" required />
+          </div>
+          <label for="field-message" class="sr-only">Μήνυμα</label>
+          <textarea id="field-message" name="message" autocomplete="off" placeholder="What do you need?"
+            data-i18n-placeholder="ph_message" required></textarea>
+          <button class="btn primary" type="submit" data-i18n="btn_send" data-i18n-html>Send <span class="arrow"
+              aria-hidden="true">→</span></button>
+          <div id="formStatus" aria-live="polite"></div>
+        </form>
+      </div>
+
+      <footer class="site-footer">
+        <div class="container">
+          <div class="footrow">
+            <span>© <span id="year"></span> Manos Balotis</span>
+            <span>
+              <a href="https://www.linkedin.com/in/emmanouil-panagiotis-balotis-3b1b2b264?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+                target="_blank" rel="noopener noreferrer">LinkedIn</a> ·
+              <a href="mailto:emmbalotis2001@gmail.com">Email</a>
+            </span>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+  </main>
+
+  <script>document.documentElement.classList.remove('no-js');</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    window.emailjs.init({
+      publicKey: "d6xNdb0dJEtVERpt-"
+    });
+  </script>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+
+</html>

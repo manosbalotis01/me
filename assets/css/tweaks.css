@@ -1,0 +1,56 @@
+/* Path: me/assets/css/tweaks.css */
+
+/* Tweaks layer (intentionally minimal).
+   Add section-by-section overrides here ONLY when needed. */
+
+/* Back-to-top button */
+.back-to-top{
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 40;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--bg) 82%, transparent);
+  backdrop-filter: blur(10px);
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+  transition: opacity .26s var(--ease), transform .26s var(--ease),
+              background .26s var(--ease), border-color .26s var(--ease),
+              color .26s var(--ease);
+}
+.back-to-top.is-visible{
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.back-to-top:hover{
+  transform: translateY(-2px);
+  background: var(--panel);
+  border-color: color-mix(in srgb, var(--fg) 22%, var(--hairline));
+  color: var(--fg);
+}
+
+.btn.is-loading{
+  opacity: .65;
+  cursor: wait;
+}
+.btn.is-loading .arrow{
+  display: inline-block;
+  animation: spin .7s linear infinite;
+}
+@keyframes spin{
+  to{ transform: rotate(360deg); }
+}
