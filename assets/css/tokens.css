@@ -34,8 +34,8 @@ html{
   color-scheme: light;
 }
 html[data-theme="dark"]{
-  --bg: #0b0c10;
-  --fg: rgba(255,255,255,.92);
+  --bg: #0d0d0d;
+  --fg: #ffffff;
   --muted: rgba(255,255,255,.62);
   --hairline: rgba(255,255,255,.12);
   --panel: rgba(255,255,255,.06);
