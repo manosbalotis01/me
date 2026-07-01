@@ -17,7 +17,7 @@
     padding: 10px var(--pad) 16px var(--pad);
 
     border-bottom: 1px solid var(--hairline);
-    background: color-mix(in srgb, var(--bg) 92%, transparent);
+    background: var(--bg);
 
     transform: translateY(-10px);
     opacity: 0;
@@ -29,6 +29,13 @@
     transform: translateY(0);
     opacity: 1;
     pointer-events: auto;
+  }
+
+  /* Solid overlay behind the open mobile menu so page content
+     doesn't bleed through underneath the nav panel */
+  .backdrop{
+    background: var(--bg);
+    backdrop-filter: none;
   }
 
   nav.site-nav a{
@@ -56,6 +63,14 @@
   .work-feature{ grid-template-columns: 1fr; padding: 14px; }
   .work-feature-media{ padding: 14px; }
   .mockup-body{ padding: 14px; }
+}
+
+@media (max-width: 768px){
+  /* Sections (Work/Services/Pricing) are often taller than one mobile
+     screen. Scroll-snap on such tall children can make the page feel
+     "stuck" partway through a section, so let mobile scroll freely. */
+  main{ scroll-snap-type: none; }
+  section{ scroll-snap-align: none; min-height: auto; }
 }
 
 /* Reduced motion */

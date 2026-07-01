@@ -198,8 +198,8 @@ export const i18n = {
 
   approach1_name: { en: "1. Understand your needs", el: "1. Καταλαβαίνω τις ανάγκες σου" },
   approach1_desc: {
-    en: "We define your goals, your audience and what your website needs to achieve.",
-    el: "Ορίζουμε τους στόχους σου, το κοινό σου και τι πρέπει να πετύχει το website σου.",
+    en: "I define your goals, your audience and what your website needs to achieve.",
+    el: "Ορίζω τους στόχους σου, το κοινό σου και τι πρέπει να πετύχει το website σου.",
   },
 
   approach2_name: { en: "2. Design & build",           el: "2. Σχεδιάζω & κατασκευάζω"            },
@@ -210,8 +210,8 @@ export const i18n = {
 
   approach3_name: { en: "3. Launch & improve",          el: "3. Λανσάρω & βελτιώνω"                },
   approach3_desc: {
-    en: "We go live with clarity, then refine where needed so the site keeps working for your business.",
-    el: "Ανεβαίνουμε online με σαφήνεια, και μετά βελτιώνουμε όπου χρειάζεται ώστε το site να συνεχίζει να δουλεύει για την επιχείρησή σου.",
+    en: "I go live with clarity, then refine where needed so the site keeps working for your business.",
+    el: "Ανεβαίνω online με σαφήνεια, και μετά βελτιώνω όπου χρειάζεται ώστε το site να συνεχίζει να δουλεύει για την επιχείρησή σου.",
   },
 
   // CONTACT
