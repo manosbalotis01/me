@@ -30,12 +30,11 @@ export function typeHeroTitle(){
   caret.setAttribute("aria-hidden", "true");
 
   let line = 0;
-  let i = 0;
+  let word = 0;
 
-  function renderTyped(){
+  function renderTyped(curr){
     // rebuild HTML with <br/> between lines
     const before = lines.slice(0, line).join("<br/>");
-    const curr = (lines[line] || "").slice(0, i);
 
     if (before) el.innerHTML = `${before}<br/>${escapeHtml(curr)}`;
     else el.innerHTML = escapeHtml(curr);
@@ -44,21 +43,22 @@ export function typeHeroTitle(){
   }
 
   function tick(){
-    const currLine = lines[line] || "";
+    // split into words, keeping the whitespace between them as its own token
+    const tokens = (lines[line] || "").split(/(\s+)/);
 
-    if (i <= currLine.length){
-      renderTyped();
-      i++;
-      setTimeout(tick, 18);
+    if (word <= tokens.length){
+      renderTyped(tokens.slice(0, word).join(""));
+      word++;
+      setTimeout(tick, 130);
       return;
     }
 
     // next line
     line++;
-    i = 0;
+    word = 0;
 
     if (line < lines.length){
-      setTimeout(tick, 140);
+      setTimeout(tick, 320);
       return;
     }
 
@@ -66,7 +66,7 @@ export function typeHeroTitle(){
     caret.remove();
   }
 
-  setTimeout(tick, 120);
+  setTimeout(tick, 200);
 }
 
 function escapeHtml(str){
