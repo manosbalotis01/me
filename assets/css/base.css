@@ -332,14 +332,16 @@ main > section.reveal-section.is-in{
   main > section.reveal-section{ opacity: 1; transform: none; transition: none; }
 }
 
-/* Center content in the last three sections */
+/* Center content in the last sections */
 #services,
+#pricing,
 #approach,
 #contact{
   display: flex;
   align-items: center;
 }
 #services > .container,
+#pricing > .container,
 #approach > .container,
 #contact > .container{
   width: 100%;

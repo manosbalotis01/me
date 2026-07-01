@@ -16,6 +16,7 @@ export const i18n = {
   // NAV
   nav_work:     { en: "Work",      el: "Έργα"         },
   nav_services: { en: "Services",  el: "Υπηρεσίες"   },
+  nav_pricing:  { en: "Pricing",   el: "Τιμές"        },
   nav_approach: { en: "Approach",  el: "Προσέγγιση"  },
   nav_contact:  { en: "Contact",   el: "Επικοινωνία" },
 
@@ -118,6 +119,82 @@ export const i18n = {
     el: "Ψηφιακός κατάλογος μέσω QR code — ιδανικό για εστιατόρια και καφέ που θέλουν έναν καθαρό, πάντα ενημερωμένο κατάλογο χωρίς έντυπα.",
   },
   svc4_tag: { en: "QR menu", el: "QR menu" },
+
+  // PRICING
+  pricing_title: { en: "Pricing",              el: "Τιμές"          },
+  pricing_hint:  { en: "Transparent packages", el: "Καθαρές τιμές"  },
+
+  pricing_group_build:  { en: "Build",               el: "Κατασκευή"                },
+  pricing_group_addons: { en: "Add-ons & Services",  el: "Add-ons & Υπηρεσίες"      },
+
+  price_label_onetime: { en: "One-time",    el: "Εφάπαξ"       },
+  price_label_monthly: { en: "Hosting /mo", el: "Hosting /μήνα" },
+  price_label_yearly:  { en: "Hosting /yr", el: "Hosting /έτος" },
+
+  price_qr_name: { en: "QR Menu", el: "QR Menu" },
+  price_qr_desc: {
+    en: "Digital menu accessible via QR code — always up to date, no printing costs.",
+    el: "Ψηφιακός κατάλογος μέσω QR code — πάντα ενημερωμένος, χωρίς κόστος εκτύπωσης.",
+  },
+  price_qr_onetime: { en: "from €200", el: "από €200" },
+  price_qr_monthly: { en: "€8",        el: "€8"        },
+  price_qr_yearly:  { en: "€75",       el: "€75"       },
+
+  price_website_name: { en: "Website", el: "Website" },
+  price_website_desc: {
+    en: "A modern business website built to represent your brand and convert visitors into clients.",
+    el: "Ένα σύγχρονο website επιχείρησης, φτιαγμένο να παρουσιάζει το brand σου και να μετατρέπει επισκέπτες σε πελάτες.",
+  },
+  price_website_onetime: { en: "from €300", el: "από €300" },
+  price_website_monthly: { en: "€12",       el: "€12"       },
+  price_website_yearly:  { en: "€115",      el: "€115"      },
+
+  price_eshop_name: { en: "E-shop", el: "E-shop" },
+  price_eshop_desc: {
+    en: "A full online store with product catalog, cart and checkout, ready to sell.",
+    el: "Ένα πλήρες online κατάστημα με κατάλογο προϊόντων, καλάθι και ολοκλήρωση παραγγελίας, έτοιμο να πουλήσει.",
+  },
+  price_eshop_onetime: { en: "from €800", el: "από €800" },
+  price_eshop_monthly: { en: "€18",       el: "€18"       },
+  price_eshop_yearly:  { en: "€170",      el: "€170"      },
+
+  price_card_name: { en: "Digital Card / Bio Link", el: "Digital Card / Bio Link" },
+  price_card_desc: {
+    en: "A digital business card / link-in-bio page — works standalone or as an add-on to your website.",
+    el: "Ψηφιακή επαγγελματική κάρτα / bio link σελίδα — λειτουργεί αυτόνομα ή ως add-on στο website σου.",
+  },
+  price_card_onetime: { en: "€80 standalone or add-on", el: "€80 αυτόνομα ή ως add-on" },
+  price_card_monthly: { en: "€5",                       el: "€5"                       },
+  price_card_yearly:  { en: "€50",                      el: "€50"                      },
+
+  price_booking_name: { en: "Booking system", el: "Σύστημα κρατήσεων" },
+  price_booking_desc: {
+    en: "Online booking/reservations system integrated into your website, so clients can book without a phone call.",
+    el: "Σύστημα online κρατήσεων ενσωματωμένο στο website σου, ώστε οι πελάτες να κλείνουν ραντεβού χωρίς τηλέφωνο.",
+  },
+  price_booking_onetime: { en: "from €250 add-on",    el: "από €250 ως add-on" },
+  price_booking_note:    { en: "No hosting required",  el: "Χωρίς hosting"      },
+
+  price_seo_name: { en: "SEO & Maintenance", el: "SEO & Συντήρηση" },
+  price_seo_desc: {
+    en: "Ongoing SEO improvements, content updates and technical maintenance to keep your site running and visible.",
+    el: "Συνεχής βελτιστοποίηση SEO, ενημερώσεις περιεχομένου και τεχνική συντήρηση, ώστε το site σου να παραμένει ενεργό και ορατό.",
+  },
+  price_seo_monthly: { en: "€12",  el: "€12"  },
+  price_seo_yearly:  { en: "€115", el: "€115" },
+
+  price_hosting_name: { en: "Hosting only", el: "Hosting μόνο" },
+  price_hosting_desc: {
+    en: "Reliable hosting only, for sites already built elsewhere or by you — includes uptime monitoring.",
+    el: "Αξιόπιστο hosting μόνο, για websites που έχουν ήδη κατασκευαστεί αλλού ή από εσένα — περιλαμβάνει παρακολούθηση uptime.",
+  },
+  price_hosting_monthly: { en: "€5–8",  el: "€5–8"  },
+  price_hosting_yearly:  { en: "€50–75", el: "€50–75" },
+
+  pricing_cta: {
+    en: "Get a quote <span class=\"arrow\" aria-hidden=\"true\">→</span>",
+    el: "Ζήτα προσφορά <span class=\"arrow\" aria-hidden=\"true\">→</span>",
+  },
 
   // APPROACH
   approach_title: { en: "Approach",  el: "Προσέγγιση" },
