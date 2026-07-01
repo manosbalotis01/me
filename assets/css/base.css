@@ -171,8 +171,9 @@ html.nav-open .menu-lines::after{ top: 6px; transform: rotate(-45deg); }
 main{
   padding-top: 58px;
   flex: 1 0 auto;
-  height: 100vh;
+  height: 100svh;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 
   scroll-snap-type: y proximity;
   scroll-padding-top: 58px;
@@ -227,7 +228,7 @@ main::after{ right: 10vw; }
   padding: clamp(60px, 8vw, 118px) 0;
   border-top: 1px solid var(--hairline);
   scroll-snap-align: start;
-  min-height: 100vh;
+  min-height: 100svh;
 }
 
 /* ❗ Contact should NOT force full viewport height */

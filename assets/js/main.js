@@ -6,7 +6,6 @@ import { initSmoothAnchors } from "./modules/smoothAnchors.js";
 import { initReveal } from "./modules/reveal.js";
 import { initScrollEffects } from "./modules/scrollEffects.js";
 import { initContactForm } from "./modules/contactForm.js";
-import { initIosOverscrollFix } from "./modules/iosOverscroll.js";
 import { initBrandRotator } from "./modules/brandRotator.js";
 
 // Order matters a bit:
@@ -20,7 +19,6 @@ initReveal();
 
 initScrollEffects();
 initContactForm();
-initIosOverscrollFix();
 initBrandRotator();
 
 const yearEl = document.getElementById("year");
