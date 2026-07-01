@@ -115,7 +115,7 @@ nav a.active{ color: var(--fg); }
 html.nav-open .menu-lines::before{ top: 6px; transform: rotate(45deg); }
 html.nav-open .menu-lines::after{ top: 6px; transform: rotate(-45deg); }
 
-/* Theme toggle */
+/* Lang toggle */
 .toggle{
   display:inline-flex;
   align-items:center;
@@ -140,42 +140,12 @@ html.nav-open .menu-lines::after{ top: 6px; transform: rotate(-45deg); }
   border-color: color-mix(in srgb, var(--fg) 18%, var(--hairline));
   color: var(--fg);
 }
-.toggle .ico{
-  width: 16px;
-  height: 16px;
-  display: inline-grid;
-  place-items: center;
-  border: 1px solid var(--hairline);
-  border-radius: 3px;
-  background: transparent;
-  color: currentColor;
-  font: 900 11px/1 var(--mono);
-}
 .toggle .label{
   font: 700 11px/1 var(--mono);
   letter-spacing: .10em;
   text-transform: uppercase;
 }
 
-#themeToggle .label{
-  display: none;
-}
-#themeToggle .ico{
-  width: 16px;
-  height: 16px;
-  border: 0;
-  border-radius: 0;
-  background: transparent;
-  font-size: 13px;
-  transform: none;
-  line-height: 1;
-}
-
-#themeToggle{
-  width: 52px;
-  height: 35px;
-  justify-content: center;
-}
     @media (min-width: 981px) {
       .site-nav .nav-controls { display: none !important; }
       .rightnav {

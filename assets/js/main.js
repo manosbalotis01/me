@@ -1,6 +1,5 @@
 // Path: me/assets/js/main.js
 
-import { initTheme } from "./modules/theme.js";
 import { initLang } from "./modules/i18n.js";
 import { initMobileNav } from "./modules/navMobile.js";
 import { initSmoothAnchors } from "./modules/smoothAnchors.js";
@@ -11,7 +10,6 @@ import { initIosOverscrollFix } from "./modules/iosOverscroll.js";
 import { initBrandRotator } from "./modules/brandRotator.js";
 
 // Order matters a bit:
-initTheme();
 initLang();
 
 initMobileNav();

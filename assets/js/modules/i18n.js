@@ -9,10 +9,6 @@ export const i18n = {
     el: "Web Solutions — Websites, Portfolios, e-shops και custom εφαρμογές | Manos Balotis",
   },
 
-  // THEME
-  theme_light: { en: "Light",   el: "Φωτεινό"  },
-  theme_dark:  { en: "Dark",    el: "Σκοτεινό" },
-
   // NAV
   nav_work:     { en: "Work",      el: "Έργα"         },
   nav_services: { en: "Services",  el: "Υπηρεσίες"   },

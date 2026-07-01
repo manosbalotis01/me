@@ -64,7 +64,3 @@
   html{ scroll-behavior: auto !important; }
   .work-row{ transform: none !important; opacity: 1 !important; }
 }
-
-@media (max-width: 420px){
-  #themeToggle .label{ display:none; }
-}
