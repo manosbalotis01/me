@@ -57,6 +57,7 @@
   flex: 1 0 auto;
   color: var(--muted);
   line-height: 1.6;
+  font-family: var(--sans);
 }
 
 .price-figures{

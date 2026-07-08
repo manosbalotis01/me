@@ -43,6 +43,7 @@ h1{
   max-width: 68ch;
   color: var(--muted);
   font-weight: 560;
+  font-family: var(--sans);
 }
 .cta{
   display:flex;

@@ -345,6 +345,7 @@
   color: var(--muted);
   max-width: 62ch;
   line-height: 1.72;
+  font-family: var(--sans);
 }
 
 #work .work-cta{
@@ -502,6 +503,7 @@ button.work-cta{
   margin: 10px 0 0 0;
   color: var(--muted);
   max-width: 68ch;
+  font-family: var(--sans);
 }
 
 .work-metrics{
@@ -608,6 +610,7 @@ button.work-cta{
 .work-desc{
   color: var(--muted);
   max-width: 82ch;
+  font-family: var(--sans);
 }
 
 .work-tags{

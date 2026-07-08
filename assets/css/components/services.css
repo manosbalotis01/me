@@ -16,7 +16,7 @@
 .svc-row.is-in{ transform: translateY(0); opacity: 1; }
 .svc-row:hover{ background: var(--panel); }
 .svc-name{ font-weight: 820; letter-spacing: -0.01em; }
-.svc-desc{ color: var(--muted); }
+.svc-desc{ color: var(--muted); font-family: var(--sans); }
 .svc-tag{
   color: var(--muted);
   font: 700 11px/1 var(--mono);
@@ -44,13 +44,14 @@
 .principle.is-in{ transform: translateY(0); opacity: 1; }
 .principle:hover{ background: var(--panel); }
 .principle-title{ font-weight: 820; letter-spacing: -0.01em; }
-.principle-desc{ color: var(--muted); max-width: 80ch; }
+.principle-desc{ color: var(--muted); max-width: 80ch; font-family: var(--sans); }
 
 /* About */
 .about{
   max-width: 72ch;
   color: var(--muted);
   margin-top: 22px;
+  font-family: var(--sans);
   will-change: transform, opacity;
   transform: translateY(14px);
   opacity: 0;
@@ -84,7 +85,7 @@ input, textarea{
   border: 0;
   background: color-mix(in srgb, var(--bg) 85%, transparent);
   color: var(--fg);
-  font: 560 14px/1.4 var(--mono);
+  font: 560 14px/1.4 var(--sans);
   -webkit-user-select: text;
   user-select: text;
   -webkit-touch-callout: default;
