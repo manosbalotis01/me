@@ -35,11 +35,11 @@ html{
   color-scheme: light;
 }
 html[data-theme="dark"]{
-  --bg: #0b1215;
-  --fg: #ffffff;
-  --muted: rgba(255,255,255,.62);
-  --hairline: rgba(255,255,255,.12);
-  --panel: rgba(255,255,255,.06);
+  --bg: #14100c;
+  --fg: rgba(245,239,231,.92);
+  --muted: rgba(245,239,231,.60);
+  --hairline: rgba(245,239,231,.12);
+  --panel: rgba(245,239,231,.06);
 
   color-scheme: dark;
 }
