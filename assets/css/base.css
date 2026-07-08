@@ -173,7 +173,6 @@ main{
   flex: 1 0 auto;
   height: 100svh;
   overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
 
   scroll-snap-type: y proximity;
   scroll-padding-top: 58px;
