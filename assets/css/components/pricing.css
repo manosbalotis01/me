@@ -54,7 +54,7 @@
 
 .price-desc{
   margin: 0;
-  flex: 1 0 auto;
+  min-height: 4.8em; /* reserve ~3 lines so divider lines align across a row */
   color: var(--muted);
   line-height: 1.6;
   font-family: var(--sans);
