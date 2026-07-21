@@ -1,3 +1,90 @@
 /* Path: me/assets/css/components/approach.css */
 
+/* APPROACH (minimal timeline) */
+.timeline{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--hairline);
+}
 
+.timeline-step{
+  position: relative;
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 24px;
+  padding: 26px 10px;
+  border-bottom: 1px solid var(--hairline);
+  will-change: transform, opacity;
+  transform: translateY(14px);
+  opacity: 0;
+  transition: transform .8s var(--ease), opacity .8s var(--ease), background .26s var(--ease);
+}
+.timeline-step.is-in{ transform: translateY(0); opacity: 1; }
+.timeline-step:hover{ background: var(--panel); }
+
+/* Vertical connector running through the markers */
+.timeline-step::before{
+  content: "";
+  position: absolute;
+  left: calc(10px + 22px);
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--hairline);
+}
+.timeline-step:first-child::before{ top: 26px; }
+.timeline-step:last-child::before{ bottom: calc(100% - 26px - 44px); }
+
+.timeline-marker{
+  position: relative;
+  z-index: 1;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--hairline);
+  background: var(--bg);
+  font: 700 11px/1 var(--mono);
+  letter-spacing: .08em;
+  color: var(--muted);
+  transition: color .26s var(--ease), border-color .26s var(--ease);
+}
+.timeline-step:hover .timeline-marker{
+  color: var(--fg);
+  border-color: color-mix(in srgb, var(--fg) 30%, var(--hairline));
+}
+
+.timeline-body{ padding-top: 10px; }
+.timeline-name{
+  font-weight: 820;
+  letter-spacing: -0.01em;
+  margin-bottom: 6px;
+}
+.timeline-desc{
+  color: var(--muted);
+  font-family: var(--sans);
+  line-height: 1.7;
+  max-width: 62ch;
+}
+
+@media (max-width: 640px){
+  .timeline-step{
+    grid-template-columns: 36px 1fr;
+    gap: 14px;
+    padding: 18px 4px;
+  }
+  .timeline-step::before{ left: calc(4px + 18px); }
+  .timeline-step:first-child::before{ top: 18px; }
+  .timeline-step:last-child::before{ bottom: calc(100% - 18px - 36px); }
+  .timeline-marker{
+    width: 36px;
+    height: 36px;
+    font-size: 10px;
+  }
+  .timeline-body{ padding-top: 7px; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .timeline-step{ transform: none !important; opacity: 1 !important; }
+}

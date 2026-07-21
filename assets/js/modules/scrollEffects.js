@@ -1,6 +1,6 @@
 // Path: me/assets/js/modules/scrollEffects.js
 
-import { root, mainEl, clamp, lerp, getScrollTop, getMaxScroll } from "./env.js";
+import { root, mainEl, clamp, lerp, getScrollTop, getMaxScroll, reduceMotion } from "./env.js";
 
 export function initScrollEffects(){
   if (!mainEl) return;
@@ -46,6 +46,18 @@ export function initScrollEffects(){
     targetY: 0,
   }));
 
+  // Pointer parallax for the decorative blocks (fine pointers only)
+  let pointerX = 0; // -0.5 .. 0.5
+  let pointerY = 0;
+
+  function updateBlockTargets(){
+    const scrollTop = getScrollTop();
+    blockState.forEach(s => {
+      s.targetY = (scrollTop * s.speed) - (pointerY * s.speed * 90);
+      s.targetX = Math.sin((scrollTop / 500) + (s.speed * 10)) * 10 + (pointerX * s.speed * 120);
+    });
+  }
+
   function updateTargets(){
     const scrollTop = getScrollTop();
 
@@ -59,11 +71,19 @@ export function initScrollEffects(){
       s.targetY = scrollTop * s.speed;
     });
 
-    blockState.forEach(s => {
-      const base = scrollTop * s.speed;
-      s.targetY = base;
-      s.targetX = Math.sin((scrollTop / 500) + (s.speed * 10)) * 10;
-    });
+    updateBlockTargets();
+  }
+
+  const finePointer =
+    window.matchMedia && window.matchMedia("(pointer: fine)").matches;
+
+  if (finePointer && !reduceMotion && blockState.length){
+    window.addEventListener("pointermove", (e) => {
+      pointerX = (e.clientX / window.innerWidth) - 0.5;
+      pointerY = (e.clientY / window.innerHeight) - 0.5;
+      updateBlockTargets();
+      scheduleRender();
+    }, { passive: true });
   }
 
   let rafId = null;

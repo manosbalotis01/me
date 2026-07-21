@@ -59,7 +59,7 @@
 @media (max-width: 720px){
   .row{ grid-template-columns: 1fr; }
   .work-row{ grid-template-columns: 44px 1fr; }
-  .work-cta{ display:none; }
+  .work-row .work-cta{ display:none; }
   .work-feature{ grid-template-columns: 1fr; padding: 14px; }
   .work-feature-media{ padding: 14px; }
   .mockup-body{ padding: 14px; }

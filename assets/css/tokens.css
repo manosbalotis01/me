@@ -83,6 +83,11 @@ a:focus-visible, button:focus-visible{
   outline-offset: 3px;
 }
 
+::selection{
+  background: var(--fg);
+  color: var(--bg);
+}
+
 .container{
   max-width: var(--max);
   margin: 0 auto;

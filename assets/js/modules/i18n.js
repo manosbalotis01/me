@@ -23,7 +23,7 @@ export const i18n = {
   // HERO
   hero_kicker: {
     en: "websites • portfolios • e-shops",
-    el: "Websites • Portfolios • E-shops",
+    el: "Websites • Portfolios • e-shops",
   },
   hero_h1: {
     en: "Websites that bring you clients.<br/>Built with clarity.",
@@ -31,7 +31,7 @@ export const i18n = {
   },
   hero_sub: {
     en: "I design and build modern websites that help your business stand out, get found online, and turn visitors into customers.",
-    el: "Σχεδιάζω και κατασκευάζω σύγχρονα websites που βοηθούν την επιχείρησή σου να ξεχωρίσει, να βρεθεί online και να μετατρέπει επισκέπτες σε πελάτες.",
+    el: "Σχεδιάζω και κατασκευάζω σύγχρονα websites που βοηθούν την επιχείρησή σας να ξεχωρίσει, να βρεθεί online και να μετατρέπει επισκέπτες σε πελάτες.",
   },
 
   cta_work: {
@@ -47,7 +47,7 @@ export const i18n = {
   meta_based: { en: "Based", el: "Βάση"    },
   meta_focus_val: {
     en: "Business websites • Portfolio sites • e-shops • Custom web tools",
-    el: "Websites επιχειρήσεων • Portfolio • E-shops • Web εργαλεία",
+    el: "Websites επιχειρήσεων • Portfolio • E-shops • Custom Web εργαλεία",
   },
   meta_based_val: {
     en: "Greece (remote friendly)",
@@ -63,8 +63,8 @@ export const i18n = {
     el: "Website Διαιτολόγου — Τοπική Επιχείρηση",
   },
   work_diet_desc: {
-    en: "A clean and trustworthy website designed to attract local clients and clearly present services and booking options.",
-    el: "Ένα καθαρό και αξιόπιστο website σχεδιασμένο να προσελκύει τοπικούς πελάτες και να παρουσιάζει ξεκάθαρα υπηρεσίες και επιλογές κράτησης.",
+    en: "A clean and trustworthy website designed to attract clients and clearly present services and booking options.",
+    el: "Ένα καθαρό και αξιόπιστο website σχεδιασμένο να προσελκύει πελάτες και να παρουσιάζει ξεκάθαρα υπηρεσίες και επιλογές κράτησης.",
   },
   work_diet_cta: { en: "Coming soon →", el: "Σύντομα →" },
 
@@ -83,8 +83,8 @@ export const i18n = {
     el: "Portfolio Σχεδιαστή — Οπτική Παρουσίαση",
   },
   work_portfolio_desc: {
-    en: "A visual-first portfolio built to present projects clearly and communicate the designer's style with impact.",
-    el: "Ένα portfolio με έμφαση στο visual που παρουσιάζει projects καθαρά και αποτυπώνει με δύναμη το στυλ του σχεδιαστή.",
+    en: "A visual-first portfolio built to present projects clearly and communicate the designer's style.",
+    el: "Ένα portfolio με έμφαση στο visual που παρουσιάζει projects καθαρά και αποτυπώνει το στυλ του σχεδιαστή.",
   },
   work_portfolio_cta: { en: "Visit website →", el: "Επισκέψου το website →" },
 
@@ -141,6 +141,11 @@ export const i18n = {
   price_qr_yearly:  { en: "€75",       el: "€75"       },
 
   price_website_name: { en: "Website", el: "Website" },
+  price_badge_popular: { en: "Most popular", el: "Πιο δημοφιλές" },
+  price_website_helper: {
+    en: "Perfect for small businesses.",
+    el: "Ιδανικό για μικρές επιχειρήσεις.",
+  },
   price_website_desc: {
     en: "A modern business website built to represent your brand and convert visitors into clients.",
     el: "Ένα σύγχρονο website επιχείρησης, φτιαγμένο να παρουσιάζει το brand σου και να μετατρέπει επισκέπτες σε πελάτες.",
@@ -200,19 +205,19 @@ export const i18n = {
   approach_title: { en: "Approach",  el: "Προσέγγιση" },
   approach_hint:  { en: "How I work", el: "Πώς δουλεύω" },
 
-  approach1_name: { en: "1. Understand your needs", el: "1. Καταλαβαίνω τις ανάγκες σου" },
+  approach1_name: { en: "Understand your needs", el: "Καταλαβαίνω τις ανάγκες σου" },
   approach1_desc: {
     en: "I define your goals, your audience and what your website needs to achieve.",
     el: "Ορίζω τους στόχους σου, το κοινό σου και τι πρέπει να πετύχει το website σου.",
   },
 
-  approach2_name: { en: "2. Design & build",           el: "2. Σχεδιάζω & κατασκευάζω"            },
+  approach2_name: { en: "Design & build",           el: "Σχεδιάζω & κατασκευάζω"            },
   approach2_desc: {
     en: "I create a clean, modern website tailored to your brand, with strong structure and fast performance.",
     el: "Δημιουργώ ένα καθαρό, σύγχρονο website προσαρμοσμένο στο brand σου, με δυνατή δομή και γρήγορη απόδοση.",
   },
 
-  approach3_name: { en: "3. Launch & improve",          el: "3. Λανσάρω & βελτιώνω"                },
+  approach3_name: { en: "Launch & improve",          el: "Λανσάρω & βελτιώνω"                },
   approach3_desc: {
     en: "I go live with clarity, then refine where needed so the site keeps working for your business.",
     el: "Ανεβαίνω online με σαφήνεια, και μετά βελτιώνω όπου χρειάζεται ώστε το site να συνεχίζει να δουλεύει για την επιχείρησή σου.",
@@ -226,12 +231,12 @@ export const i18n = {
     el: "Ας χτίσουμε το website σου",
   },
   contact_h: {
-    en: "Need a website that looks sharp and works for your business?",
-    el: "Χρειάζεσαι ένα website που εντυπωσιάζει και δουλεύει για την επιχείρησή σου;",
+    en: "Need a website that works for your business?",
+    el: "Χρειάζεσαι ένα website που δουλεύει για την επιχείρησή σου;",
   },
   contact_sub: {
-    en: "Tell me a bit about your business and what you need. I'll reply with next steps.",
-    el: "Πες μου λίγα για την επιχείρησή σου και τι χρειάζεσαι. Θα απαντήσω με τα επόμενα βήματα.",
+    en: "Tell me about your project. I'll reply within 24 hours with the next steps.",
+    el: "Πες μου για το project σου. Θα απαντήσω εντός 24 ωρών με τα επόμενα βήματα.",
   },
 
   // FORM
