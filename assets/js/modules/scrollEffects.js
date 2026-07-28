@@ -123,7 +123,16 @@ export function initScrollEffects(){
     .map(a => document.querySelector(a.getAttribute("href")))
     .filter(Boolean);
 
+  function updateBackToTop(){
+    // Kept independent of the nav sections: text pages (e.g. /privacy/)
+    // have no in-page sections but still need the button.
+    if (!backToTopBtn) return;
+    backToTopBtn.classList.toggle("is-visible", mainEl.scrollTop > mainEl.clientHeight * 0.5);
+  }
+
   function setActiveNavByScroll(){
+    updateBackToTop();
+
     if (!sections.length) return;
 
     const st = mainEl.scrollTop;
@@ -144,10 +153,6 @@ export function initScrollEffects(){
     navLinks.forEach(a => a.classList.remove("active"));
     const active = navLinks.find(a => a.getAttribute("href") === `#${current.id}`);
     if (active) active.classList.add("active");
-
-    if (backToTopBtn) {
-      backToTopBtn.classList.toggle("is-visible", st > mainEl.clientHeight * 0.5);
-    }
   }
 
   let ticking = false;
