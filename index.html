@@ -36,11 +36,31 @@
 
       <nav id="siteNav" class="site-nav" aria-label="Main navigation">
         <a href="#work" data-nav data-i18n="nav_work">Work</a>
+        <a href="#products" data-nav data-i18n="nav_products">Products</a>
         <a href="#services" data-nav data-i18n="nav_services">Services</a>
         <a href="#approach" data-nav data-i18n="nav_approach">Approach</a>
         <a href="#pricing" data-nav data-i18n="nav_pricing">Pricing</a>
         <a href="#contact" data-nav data-i18n="nav_contact">Contact</a>
+
         <div class="nav-controls">
+          <div class="nav-login" data-nav-login>
+            <button class="toggle toggle--login nav-login-trigger" id="loginTriggerM" type="button"
+              aria-haspopup="true" aria-expanded="false" aria-controls="loginMenuM">
+              <span class="label" data-i18n="nav_login">Login</span>
+              <span class="nav-login-caret" aria-hidden="true">▾</span>
+            </button>
+            <div class="nav-login-menu" id="loginMenuM" role="menu" aria-labelledby="loginTriggerM" hidden>
+              <a class="nav-login-item" href="https://vitrina.manosbalotis.com" target="_blank"
+                rel="noopener noreferrer" role="menuitem">
+                <span class="nav-login-brand"><span class="prompt">&gt;</span>Vitrina<span class="cursor">_</span></span>
+                <span class="nav-login-status nav-login-status--live" data-i18n="products_status_live">Live</span>
+              </a>
+              <span class="nav-login-item nav-login-item--soon" role="menuitem" aria-disabled="true">
+                <span class="nav-login-brand"><span class="prompt">&gt;</span>Ora<span class="cursor">_</span></span>
+                <span class="nav-login-status" data-i18n="products_status_soon">Coming soon</span>
+              </span>
+            </div>
+          </div>
           <button class="toggle" id="langToggle" type="button" aria-label="Toggle language">
             <span class="label" id="langLabel" aria-hidden="true">EN</span>
           </button>
@@ -54,6 +74,24 @@
       <div class="backdrop" id="navBackdrop" hidden></div>
 
       <div class="rightnav">
+        <div class="nav-login" data-nav-login>
+          <button class="toggle toggle--login nav-login-trigger" id="loginTrigger" type="button"
+            aria-haspopup="true" aria-expanded="false" aria-controls="loginMenu">
+            <span class="label" data-i18n="nav_login">Login</span>
+            <span class="nav-login-caret" aria-hidden="true">▾</span>
+          </button>
+          <div class="nav-login-menu" id="loginMenu" role="menu" aria-labelledby="loginTrigger" hidden>
+            <a class="nav-login-item" href="https://vitrina.manosbalotis.com" target="_blank"
+              rel="noopener noreferrer" role="menuitem">
+              <span class="nav-login-brand"><span class="prompt">&gt;</span>Vitrina<span class="cursor">_</span></span>
+              <span class="nav-login-status nav-login-status--live" data-i18n="products_status_live">Live</span>
+            </a>
+            <span class="nav-login-item nav-login-item--soon" role="menuitem" aria-disabled="true">
+              <span class="nav-login-brand"><span class="prompt">&gt;</span>Ora<span class="cursor">_</span></span>
+              <span class="nav-login-status" data-i18n="products_status_soon">Coming soon</span>
+            </span>
+          </div>
+        </div>
         <button class="toggle" id="langToggleDesktop" type="button" aria-label="Toggle language">
           <span class="label">EN</span>
         </button>
@@ -167,6 +205,70 @@
               <!-- TODO: replace with real URL -->
               <a class="work-cta" href="https://manoskotsifakis.com" target="_blank" rel="noopener noreferrer"
                 data-i18n="work_portfolio_cta">Visit website →</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="scroll-float" data-speed="0.10" data-i18n="products_title">Products</h2>
+          <div class="hint scroll-float" data-speed="0.06" data-i18n="products_hint">Tools I build and run</div>
+        </div>
+
+        <p class="products-intro reveal muted" data-i18n="products_intro">Beyond client websites, I build and operate my
+          own software — ready-made tools you can plug into your business without building anything from scratch.</p>
+
+        <div class="products-grid">
+
+          <div class="product-card reveal">
+            <div class="product-card-head">
+              <span class="product-brand">
+                <span class="prompt">&gt;</span>Vitrina<span class="cursor">_</span>
+              </span>
+              <span class="product-status product-status--live" data-i18n="products_status_live">Live</span>
+            </div>
+            <div class="product-tagline" data-i18n="vitrina_tagline">Manage your products, everywhere at once</div>
+            <p class="product-desc" data-i18n="vitrina_desc">A single, simple dashboard to manage your whole product
+              catalog — prices, photos, categories and stock. Update once, and your e-shop stays in sync automatically.
+              Built for shops that want control without the hassle.</p>
+            <div class="product-tags">
+              <span data-i18n="vitrina_tag1">Product catalog</span>
+              <span data-i18n="vitrina_tag2">Live stock</span>
+              <span data-i18n="vitrina_tag3">For e-shops</span>
+            </div>
+            <div class="product-actions">
+              <a class="btn primary" href="https://vitrina.manosbalotis.com" target="_blank" rel="noopener noreferrer"
+                data-i18n="vitrina_login" data-i18n-html>Log in <span class="arrow" aria-hidden="true">→</span></a>
+              <span class="product-login-note" data-i18n="vitrina_login_note">Already a client? Sign in to your
+                panel.</span>
+            </div>
+          </div>
+
+          <div class="product-card reveal">
+            <div class="product-card-head">
+              <span class="product-brand">
+                <span class="prompt">&gt;</span>Ora<span class="cursor">_</span>
+              </span>
+              <span class="product-status" data-i18n="products_status_soon">Coming soon</span>
+            </div>
+            <div class="product-tagline" data-i18n="ora_tagline">Bookings, without the phone tag</div>
+            <p class="product-desc" data-i18n="ora_desc">An online booking system that lets your clients reserve a time
+              on their own, day or night — no phone calls, no double-bookings. You see every appointment in one clear
+              calendar. Ideal for salons, studios, clinics and services.</p>
+            <div class="product-tags">
+              <span data-i18n="ora_tag1">Online booking</span>
+              <span data-i18n="ora_tag2">Calendar</span>
+              <span data-i18n="ora_tag3">For services</span>
+            </div>
+            <div class="product-actions">
+              <button class="product-login--soon" type="button" disabled aria-label="Ora login — coming soon"
+                data-i18n="ora_login">Log in — soon</button>
+              <span class="product-login-note" data-i18n="ora_login_note">Want early access? Get in touch.</span>
             </div>
           </div>
 

@@ -15,10 +15,12 @@ export const i18n = {
 
   // NAV
   nav_work:     { en: "Work",      el: "Έργα"         },
+  nav_products: { en: "Products",  el: "Προϊόντα"     },
   nav_services: { en: "Services",  el: "Υπηρεσίες"   },
   nav_pricing:  { en: "Pricing",   el: "Τιμές"        },
   nav_approach: { en: "Approach",  el: "Προσέγγιση"  },
   nav_contact:  { en: "Contact",   el: "Επικοινωνία" },
+  nav_login:    { en: "Login",     el: "Σύνδεση"      },
 
   // HERO
   hero_kicker: {
@@ -87,6 +89,54 @@ export const i18n = {
     el: "Ένα portfolio με έμφαση στο visual που παρουσιάζει projects καθαρά και αποτυπώνει το στυλ του σχεδιαστή.",
   },
   work_portfolio_cta: { en: "Visit website →", el: "Επισκέψου το website →" },
+
+  // PRODUCTS
+  products_title: { en: "Products",              el: "Προϊόντα"                          },
+  products_hint:  { en: "Tools I build and run", el: "Εργαλεία που φτιάχνω και τρέχω" },
+  products_intro: {
+    en: "Beyond client websites, I build and operate my own software — ready-made tools you can plug into your business without building anything from scratch.",
+    el: "Πέρα από websites για πελάτες, φτιάχνω και λειτουργώ το δικό μου λογισμικό — έτοιμα εργαλεία που συνδέεις στην επιχείρησή σου, χωρίς να χτίσεις κάτι από την αρχή.",
+  },
+
+  products_status_live: { en: "Live",        el: "Ενεργό"   },
+  products_status_soon: { en: "Coming soon", el: "Σύντομα"  },
+
+  vitrina_tagline: {
+    en: "Manage your products, everywhere at once",
+    el: "Διαχειρίσου τα προϊόντα σου, παντού με μία κίνηση",
+  },
+  vitrina_desc: {
+    en: "A single, simple dashboard to manage your whole product catalog — prices, photos, categories and stock. Update once, and your e-shop stays in sync automatically. Built for shops that want control without the hassle.",
+    el: "Ένα απλό, ενιαίο dashboard για να διαχειρίζεσαι ολόκληρο τον κατάλογό σου — τιμές, φωτογραφίες, κατηγορίες και αποθέματα. Το ενημερώνεις μία φορά και το e-shop σου συγχρονίζεται αυτόματα. Φτιαγμένο για καταστήματα που θέλουν έλεγχο χωρίς κόπο.",
+  },
+  vitrina_tag1: { en: "Product catalog", el: "Κατάλογος προϊόντων" },
+  vitrina_tag2: { en: "Live stock",      el: "Ζωντανό απόθεμα"     },
+  vitrina_tag3: { en: "For e-shops",     el: "Για e-shops"          },
+  vitrina_login: {
+    en: "Log in <span class=\"arrow\" aria-hidden=\"true\">→</span>",
+    el: "Σύνδεση <span class=\"arrow\" aria-hidden=\"true\">→</span>",
+  },
+  vitrina_login_note: {
+    en: "Already a client? Sign in to your panel.",
+    el: "Ήδη πελάτης; Συνδέσου στο panel σου.",
+  },
+
+  ora_tagline: {
+    en: "Bookings, without the phone tag",
+    el: "Κρατήσεις, χωρίς ατέλειωτα τηλέφωνα",
+  },
+  ora_desc: {
+    en: "An online booking system that lets your clients reserve a time on their own, day or night — no phone calls, no double-bookings. You see every appointment in one clear calendar. Ideal for salons, studios, clinics and services.",
+    el: "Ένα σύστημα online κρατήσεων που αφήνει τους πελάτες σου να κλείνουν ώρα μόνοι τους, μέρα ή νύχτα — χωρίς τηλέφωνα, χωρίς διπλές κρατήσεις. Βλέπεις κάθε ραντεβού σε ένα ξεκάθαρο ημερολόγιο. Ιδανικό για κομμωτήρια, studios, ιατρεία και υπηρεσίες.",
+  },
+  ora_tag1: { en: "Online booking", el: "Online κρατήσεις" },
+  ora_tag2: { en: "Calendar",       el: "Ημερολόγιο"        },
+  ora_tag3: { en: "For services",   el: "Για υπηρεσίες"     },
+  ora_login: { en: "Log in — soon", el: "Σύνδεση — σύντομα" },
+  ora_login_note: {
+    en: "Want early access? Get in touch.",
+    el: "Θες πρόωρη πρόσβαση; Επικοινώνησε.",
+  },
 
   // SERVICES
   services_title: { en: "Services",    el: "Υπηρεσίες"  },

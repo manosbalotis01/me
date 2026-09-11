@@ -16,12 +16,16 @@ header{
   align-items:center;
   justify-content:space-between;
   gap: 16px;
+  /* Top bar spans the full viewport (content below stays at --max),
+     so the brand, links and controls have room and never overlap. */
+  max-width: none;
 }
 .leftnav,.rightnav{
   display:flex;
   align-items:center;
-  gap: 14px;
-  min-width: 240px;
+  gap: 12px;
+  flex: 1 1 0;
+  min-width: 0;
   justify-content: flex-start;
 }
 .rightnav{ justify-content: flex-end; }
@@ -177,7 +181,108 @@ html.nav-open .menu-lines::after{ top: 6px; transform: rotate(-45deg); }
   height: 35px;
   justify-content: center;
 }
-    @media (min-width: 981px) {
+
+/* ======================================================
+   NAV LOGIN (product login dropdown — sits with lang/theme)
+   ====================================================== */
+.nav-login{
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Login trigger: a .toggle sized to its label */
+.toggle--login{
+  width: auto;
+  flex: 0 0 auto;
+  gap: 6px;
+  padding: 0 12px;
+}
+
+.nav-login-caret{
+  font-size: 8px;
+  line-height: 1;
+  transition: transform .26s var(--ease);
+}
+.nav-login.is-open .nav-login-caret{ transform: rotate(180deg); }
+.nav-login.is-open .toggle--login{
+  color: var(--fg);
+  background: var(--panel);
+  border-color: color-mix(in srgb, var(--fg) 18%, var(--hairline));
+}
+
+.nav-login-menu{
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  z-index: 55;
+  min-width: 236px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--hairline);
+  border-radius: 0;
+  background: var(--bg);
+  box-shadow: 0 14px 34px color-mix(in srgb, var(--fg) 14%, transparent);
+}
+.nav-login-menu[hidden]{ display: none; }
+
+/* Mobile cluster sits at the left of the overlay row, so its menu must
+   open to the right to stay on screen (the desktop one keeps right:0). */
+.nav-controls .nav-login-menu{
+  left: 0;
+  right: auto;
+}
+
+.nav-login-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--hairline);
+  transition: background .22s var(--ease);
+}
+.nav-login-item:last-child{ border-bottom: 0; }
+a.nav-login-item:hover{ background: var(--panel); }
+
+.nav-login-item--soon{ cursor: not-allowed; opacity: .7; }
+
+.nav-login-brand{
+  display: inline-flex;
+  align-items: baseline;
+  font: 700 15px/1 var(--mono);
+  letter-spacing: -0.01em;
+  color: var(--fg);
+  text-transform: none;
+}
+.nav-login-brand .prompt{ color: var(--muted); margin-right: 1px; }
+.nav-login-brand .cursor{
+  color: var(--muted);
+  animation: product-blink 1.1s steps(1) infinite;
+}
+
+.nav-login-status{
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--muted);
+  font: 700 9px/1 var(--mono);
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.nav-login-status--live{ color: var(--fg); }
+.nav-login-status--live::before{
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #2fbf71;
+  box-shadow: 0 0 0 0 rgba(47, 191, 113, .55);
+  animation: product-pulse 1.8s var(--ease) infinite;
+}
+
+    @media (min-width: 1181px) {
       .site-nav .nav-controls { display: none !important; }
       .rightnav {
         display: inline-flex !important;
@@ -186,7 +291,7 @@ html.nav-open .menu-lines::after{ top: 6px; transform: rotate(-45deg); }
       }
     }
 
-    @media (max-width: 980px) {
+    @media (max-width: 1180px) {
       .rightnav { display: none !important; }
       .site-nav .nav-controls {
         display: flex;

@@ -3,6 +3,7 @@
 import { initTheme } from "./modules/theme.js";
 import { initLang } from "./modules/i18n.js";
 import { initMobileNav } from "./modules/navMobile.js";
+import { initNavLogin } from "./modules/navLogin.js";
 import { initSmoothAnchors } from "./modules/smoothAnchors.js";
 import { initReveal } from "./modules/reveal.js";
 import { initScrollEffects } from "./modules/scrollEffects.js";
@@ -14,6 +15,7 @@ initTheme();
 initLang();
 
 initMobileNav();
+initNavLogin();
 initSmoothAnchors();
 
 initReveal();
