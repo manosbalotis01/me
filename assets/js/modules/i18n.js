@@ -32,8 +32,8 @@ export const i18n = {
     el: "Websites που φέρνουν πελάτες.<br/>Χτισμένα με σαφήνεια.",
   },
   hero_sub: {
-    en: "I design and build modern websites that help your business stand out, get found online, and turn visitors into customers.",
-    el: "Σχεδιάζω και κατασκευάζω σύγχρονα websites που βοηθούν την επιχείρησή σας να ξεχωρίσει, να βρεθεί online και να μετατρέπει επισκέπτες σε πελάτες.",
+    en: "We design and build modern websites that help your business stand out, get found online, and turn visitors into customers.",
+    el: "Σχεδιάζουμε και κατασκευάζουμε σύγχρονα websites που βοηθούν την επιχείρησή σας να ξεχωρίσει, να βρεθεί online και να μετατρέπει επισκέπτες σε πελάτες.",
   },
 
   cta_work: {
@@ -92,10 +92,10 @@ export const i18n = {
 
   // PRODUCTS
   products_title: { en: "Products",              el: "Προϊόντα"                          },
-  products_hint:  { en: "Tools I build and run", el: "Εργαλεία που φτιάχνω και τρέχω" },
+  products_hint:  { en: "Tools we build and run", el: "Εργαλεία που φτιάχνουμε και τρέχουμε" },
   products_intro: {
-    en: "Beyond client websites, I build and operate my own software — ready-made tools you can plug into your business without building anything from scratch.",
-    el: "Πέρα από websites για πελάτες, φτιάχνω και λειτουργώ το δικό μου λογισμικό — έτοιμα εργαλεία που συνδέεις στην επιχείρησή σου, χωρίς να χτίσεις κάτι από την αρχή.",
+    en: "Beyond client websites, we build and operate our own software — ready-made tools you can plug into your business without building anything from scratch.",
+    el: "Πέρα από websites για πελάτες, φτιάχνουμε και λειτουργούμε το δικό μας λογισμικό — έτοιμα εργαλεία που συνδέεις στην επιχείρησή σου, χωρίς να χτίσεις κάτι από την αρχή.",
   },
 
   products_status_live: { en: "Live",        el: "Ενεργό"   },
@@ -253,24 +253,24 @@ export const i18n = {
 
   // APPROACH
   approach_title: { en: "Approach",  el: "Προσέγγιση" },
-  approach_hint:  { en: "How I work", el: "Πώς δουλεύω" },
+  approach_hint:  { en: "How we work", el: "Πώς δουλεύουμε" },
 
-  approach1_name: { en: "Understand your needs", el: "Καταλαβαίνω τις ανάγκες σου" },
+  approach1_name: { en: "Understand your needs", el: "Καταλαβαίνουμε τις ανάγκες σου" },
   approach1_desc: {
-    en: "I define your goals, your audience and what your website needs to achieve.",
-    el: "Ορίζω τους στόχους σου, το κοινό σου και τι πρέπει να πετύχει το website σου.",
+    en: "We define your goals, your audience and what your website needs to achieve.",
+    el: "Ορίζουμε τους στόχους σου, το κοινό σου και τι πρέπει να πετύχει το website σου.",
   },
 
-  approach2_name: { en: "Design & build",           el: "Σχεδιάζω & κατασκευάζω"            },
+  approach2_name: { en: "Design & build",           el: "Σχεδιάζουμε & κατασκευάζουμε"       },
   approach2_desc: {
-    en: "I create a clean, modern website tailored to your brand, with strong structure and fast performance.",
-    el: "Δημιουργώ ένα καθαρό, σύγχρονο website προσαρμοσμένο στο brand σου, με δυνατή δομή και γρήγορη απόδοση.",
+    en: "We create a clean, modern website tailored to your brand, with strong structure and fast performance.",
+    el: "Δημιουργούμε ένα καθαρό, σύγχρονο website προσαρμοσμένο στο brand σου, με δυνατή δομή και γρήγορη απόδοση.",
   },
 
-  approach3_name: { en: "Launch & improve",          el: "Λανσάρω & βελτιώνω"                },
+  approach3_name: { en: "Launch & improve",          el: "Λανσάρουμε & βελτιώνουμε"          },
   approach3_desc: {
-    en: "I go live with clarity, then refine where needed so the site keeps working for your business.",
-    el: "Ανεβαίνω online με σαφήνεια, και μετά βελτιώνω όπου χρειάζεται ώστε το site να συνεχίζει να δουλεύει για την επιχείρησή σου.",
+    en: "We go live with clarity, then refine where needed so the site keeps working for your business.",
+    el: "Ανεβαίνουμε online με σαφήνεια, και μετά βελτιώνουμε όπου χρειάζεται ώστε το site να συνεχίζει να δουλεύει για την επιχείρησή σου.",
   },
 
   // CONTACT
@@ -285,8 +285,8 @@ export const i18n = {
     el: "Χρειάζεσαι ένα website που δουλεύει για την επιχείρησή σου;",
   },
   contact_sub: {
-    en: "Tell me about your project. I'll reply within 24 hours with the next steps.",
-    el: "Πες μου για το project σου. Θα απαντήσω εντός 24 ωρών με τα επόμενα βήματα.",
+    en: "Tell us about your project. We'll reply within 24 hours with the next steps.",
+    el: "Πες μας για το project σου. Θα απαντήσουμε εντός 24 ωρών με τα επόμενα βήματα.",
   },
 
   // FORM
