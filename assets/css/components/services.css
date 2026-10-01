@@ -130,6 +130,89 @@ textarea{ height: 140px; resize: none; border-radius: 0; }
   scroll-snap-align: start;
   scroll-snap-stop: normal;
 }
+.footgrid{
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 24px 40px;
+  padding: 14px 0 26px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid var(--hairline);
+}
+.footcol{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  min-width: 0;
+}
+.footcol h4{
+  margin: 0 0 2px;
+  font: 700 11px/1 var(--mono);
+  letter-spacing: .12em;
+  color: var(--muted);
+  opacity: .7;
+}
+.footcol p{
+  margin: 0;
+  max-width: 36ch;
+  font: 400 13px/1.55 var(--sans);
+  letter-spacing: 0;
+  text-transform: none;
+}
+.footbrand{
+  font: 700 15px/1 var(--mono);
+  letter-spacing: -0.01em;
+  text-transform: none;
+  color: var(--fg);
+}
+.footbrand .prompt,
+.footcol .prompt,
+.footcol .cursor{ color: var(--muted); }
+.footcol a{
+  position: relative;
+  color: var(--muted);
+  text-transform: none;
+  font-size: 13px;
+  letter-spacing: .02em;
+  transition: color .22s var(--ease);
+}
+.footcol a:hover{ color: var(--fg); }
+.footalso{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 4px;
+  font: 700 11px/1 var(--mono);
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.footcol .footalso a{ display: inline-flex; }
+.footalso img{
+  height: 20px;
+  width: auto;
+  display: block;
+  transform: translateY(-3px); /* optical: centre the "o" on the label's text line */
+  opacity: .85;
+  transition: opacity .22s var(--ease);
+}
+.footalso a:hover img{ opacity: 1; }
+.footsoon{
+  font-size: 13px;
+  text-transform: none;
+  letter-spacing: .02em;
+  opacity: .6;
+}
+.footsoon em{
+  font-style: normal;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  margin-left: 6px;
+}
+@media (max-width: 640px){
+  .footgrid{ grid-template-columns: 1fr 1fr; }
+  .footcol--brand{ grid-column: 1 / -1; }
+}
 .footrow{
   display:flex;
   justify-content: space-between;
@@ -137,6 +220,7 @@ textarea{ height: 140px; resize: none; border-radius: 0; }
   gap: 12px;
   flex-wrap: wrap;
 }
+.footcredit{ text-transform: none; letter-spacing: .04em; }
 .footrow a{
   position: relative;
   color: var(--muted);

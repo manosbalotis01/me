@@ -274,6 +274,22 @@ export const i18n = {
   },
 
   // FOOTER
+  footer_tagline: {
+    en: "Websites, e-shops and booking tools for local businesses.",
+    el: "Websites, e-shops και εργαλεία κρατήσεων για τοπικές επιχειρήσεις.",
+  },
+  footer_also: { en: "See also:", el: "Δείτε επίσης:" },
+  footer_contact_title: { en: "Contact", el: "Επικοινωνία" },
+  footer_rights: {
+    en: "MANOS BALOTIS - ALL RIGHTS RESERVED",
+    el: "MANOS BALOTIS - ΟΛΑ ΤΑ ΔΙΚΑΙΩΜΑΤΑ ΚΑΤΟΧΥΡΩΜΕΝΑ",
+  },
+  footer_credit: {
+    en: "Designed and Developed (Obviously) by me! :p",
+    el: "Σχεδιάστηκε και αναπτύχθηκε (προφανώς) από εμένα! :p",
+  },
+  footer_nav_title:      { en: "Navigate", el: "Πλοήγηση" },
+  footer_products_title: { en: "Products", el: "Προϊόντα"  },
   footer_privacy: { en: "Privacy Policy", el: "Πολιτική Απορρήτου" },
 
   // ======================================================

@@ -16,6 +16,7 @@
 .legal > .container{
   flex: 1 0 auto;
   width: 100%;
+  padding-bottom: clamp(40px, 6vw, 72px); /* breathing room above the footer */
 }
 .legal .site-footer{
   margin-top: auto;

@@ -1,7 +1,9 @@
 /* Path: me/assets/css/components/contact.css */
 
 
-/* Contact should behave like a full panel, with footer pinned at bottom */
+/* Contact + footer fill exactly one viewport, so "Contact" in the nav lands
+   cleanly at the top (no strip of the previous section). The form is centred
+   in the space above the footer, so there is no dead space below it. */
 #contact.contact{
   min-height: calc(100svh - 58px); /* 58px header */
   display: flex;
@@ -9,10 +11,17 @@
   padding-bottom: 0; /* so footer sits flush */
 }
 
-/* Let the main contact content take remaining space */
 #contact.contact > .container{
   flex: 1 0 auto;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: clamp(24px, 4vw, 48px);
+}
+
+@media (max-width: 768px){
+  #contact.contact{ min-height: auto; }
 }
 
 /* Footer pinned to bottom of the contact panel */
