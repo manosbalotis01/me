@@ -60,35 +60,10 @@ export const i18n = {
   work_title: { en: "Selected work",                    el: "Επιλεγμένα έργα"                          },
   work_hint:  { en: "Real projects for real businesses", el: "Πραγματικά projects για πραγματικές επιχειρήσεις" },
 
-  work_diet_title: {
-    en: "Dietitian Website — Local Business",
-    el: "Website Διαιτολόγου — Τοπική Επιχείρηση",
-  },
-  work_diet_desc: {
-    en: "A clean and trustworthy website designed to attract clients and clearly present services and booking options.",
-    el: "Ένα καθαρό και αξιόπιστο website σχεδιασμένο να προσελκύει πελάτες και να παρουσιάζει ξεκάθαρα υπηρεσίες και επιλογές κράτησης.",
-  },
-  work_diet_cta: { en: "Coming soon →", el: "Σύντομα →" },
-
-  work_skyros_title: {
-    en: "Woodcarving Website — Craft & Storytelling",
-    el: "Website Ξυλογλυπτικής — Τέχνη & Αφήγηση",
-  },
-  work_skyros_desc: {
-    en: "A storytelling-driven website that highlights craftsmanship and builds a strong, memorable visual identity.",
-    el: "Ένα website βασισμένο στην αφήγηση που αναδεικνύει την τέχνη και χτίζει μια δυνατή, αξέχαστη οπτική ταυτότητα.",
-  },
-  work_skyros_cta: { en: "Visit website →", el: "Επισκέψου το website →" },
-
-  work_portfolio_title: {
-    en: "Designer Portfolio — Visual Showcase",
-    el: "Portfolio Σχεδιαστή — Οπτική Παρουσίαση",
-  },
-  work_portfolio_desc: {
-    en: "A visual-first portfolio built to present projects clearly and communicate the designer's style.",
-    el: "Ένα portfolio με έμφαση στο visual που παρουσιάζει projects καθαρά και αποτυπώνει το στυλ του σχεδιαστή.",
-  },
-  work_portfolio_cta: { en: "Visit website →", el: "Επισκέψου το website →" },
+  work_skyros_sub:    { en: "Woodcarving",        el: "Ξυλογλυπτική"        },
+  work_evrixoron_sub: { en: "E-shop",             el: "Ηλεκτρονικό κατάστημα" },
+  work_portfolio_sub: { en: "Designer portfolio", el: "Portfolio σχεδιαστή" },
+  work_obol_sub:      { en: "Bills app",          el: "Εφαρμογή λογαριασμών" },
 
   // PRODUCTS
   products_title: { en: "Products",              el: "Προϊόντα"                          },
@@ -206,8 +181,8 @@ export const i18n = {
 
   price_eshop_name: { en: "E-shop", el: "E-shop" },
   price_eshop_desc: {
-    en: "A full online store with product catalog, cart and checkout, ready to sell.",
-    el: "Ένα πλήρες online κατάστημα με κατάλογο προϊόντων, καλάθι και ολοκλήρωση παραγγελίας, έτοιμο να πουλήσει.",
+    en: "A full online store with product catalog, cart and checkout, ready to sell. E-shops are built with <span class=\"inline-brand\"><span class=\"prompt\">&gt;</span>Vitrina<span class=\"cursor\">_</span></span>.",
+    el: "Ένα πλήρες online κατάστημα με κατάλογο προϊόντων, καλάθι και ολοκλήρωση παραγγελίας, έτοιμο να πουλήσει. Τα e-shops υλοποιούνται με τη χρήση του <span class=\"inline-brand\"><span class=\"prompt\">&gt;</span>Vitrina<span class=\"cursor\">_</span></span>.",
   },
   price_eshop_onetime: { en: "from €800", el: "από €800" },
   price_eshop_monthly: { en: "€18",       el: "€18"       },
@@ -224,8 +199,8 @@ export const i18n = {
 
   price_booking_name: { en: "Booking system", el: "Σύστημα κρατήσεων" },
   price_booking_desc: {
-    en: "Online booking/reservations system integrated into your website, so clients can book without a phone call.",
-    el: "Σύστημα online κρατήσεων ενσωματωμένο στο website σου, ώστε οι πελάτες να κλείνουν ραντεβού χωρίς τηλέφωνο.",
+    en: "Online booking/reservations system powered by <span class=\"inline-brand\"><span class=\"prompt\">&gt;</span>Ora<span class=\"cursor\">_</span></span> and integrated into your website, so clients can book without a phone call.",
+    el: "Σύστημα online κρατήσεων με τη χρήση του <span class=\"inline-brand\"><span class=\"prompt\">&gt;</span>Ora<span class=\"cursor\">_</span></span>, ενσωματωμένο στο website σου, ώστε οι πελάτες να κλείνουν ραντεβού χωρίς τηλέφωνο.",
   },
   price_booking_onetime: { en: "from €250 add-on",    el: "από €250 ως add-on" },
   price_booking_note:    { en: "No hosting required",  el: "Χωρίς hosting"      },
