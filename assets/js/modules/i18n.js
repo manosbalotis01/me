@@ -64,6 +64,7 @@ export const i18n = {
   work_evrixoron_sub: { en: "E-shop",             el: "Ηλεκτρονικό κατάστημα" },
   work_portfolio_sub: { en: "Designer portfolio", el: "Portfolio σχεδιαστή" },
   work_obol_sub:      { en: "Bills app",          el: "Εφαρμογή λογαριασμών" },
+  work_barbas_sub:    { en: "Digital menu",       el: "Ψηφιακό μενού"       },
 
   // PRODUCTS
   products_title: { en: "Products",              el: "Προϊόντα"                          },
