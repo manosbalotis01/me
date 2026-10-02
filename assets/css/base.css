@@ -446,6 +446,7 @@ main > section.reveal-section.is-in{
 
 /* Center content in the last sections */
 #services,
+#products,
 #pricing,
 #approach,
 #contact{
@@ -456,6 +457,7 @@ main > section.reveal-section.is-in{
   align-items: safe center;
 }
 #services > .container,
+#products > .container,
 #pricing > .container,
 #approach > .container,
 #contact > .container{
