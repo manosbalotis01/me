@@ -157,6 +157,13 @@ export const i18n = {
   price_label_monthly: { en: "Hosting /mo", el: "Hosting /μήνα" },
   price_label_yearly:  { en: "Hosting /yr", el: "Hosting /έτος" },
 
+  price_single_name: { en: "Single page website", el: "Single page website" },
+  price_single_desc: {
+    en: "A clean one-page website that presents your business, services and contact details in one place.",
+    el: "Ένα καθαρό website μίας σελίδας που παρουσιάζει την επιχείρησή σου, τις υπηρεσίες και τα στοιχεία επικοινωνίας σε ένα σημείο.",
+  },
+  price_single_onetime: { en: "from €150", el: "από €150" },
+
   price_qr_name: { en: "QR Menu", el: "QR Menu" },
   price_qr_desc: {
     en: "Digital menu accessible via QR code — always up to date, no printing costs.",
