@@ -108,8 +108,26 @@ export const i18n = {
   ora_tag1: { en: "Online booking", el: "Online κρατήσεις" },
   ora_tag2: { en: "Calendar",       el: "Ημερολόγιο"        },
   ora_tag3: { en: "For services",   el: "Για υπηρεσίες"     },
+
+  pinakas_tagline: {
+    en: "Your digital menu, managed in one place",
+    el: "Το ψηφιακό σου μενού, διαχειρισμένο σε ένα σημείο",
+  },
+  pinakas_desc: {
+    en: "A management panel for digital menus. Add your dishes, prices and categories, and Pinakas automatically generates your menu website and a ready-to-print QR code. Update once, and your menu is always current. Built for restaurants, cafés and tavernas.",
+    el: "Ένα panel διαχείρισης για ψηφιακά μενού. Προσθέτεις πιάτα, τιμές και κατηγορίες και το Pinakas δημιουργεί αυτόματα την ιστοσελίδα του μενού σου και ένα QR έτοιμο για εκτύπωση. Το ενημερώνεις μία φορά και το μενού σου είναι πάντα ενημερωμένο. Φτιαγμένο για εστιατόρια, καφέ και ταβέρνες.",
+  },
+  pinakas_tag1: { en: "Digital menu",      el: "Ψηφιακό μενού"       },
+  pinakas_tag2: { en: "Auto website & QR", el: "Αυτόματο site & QR"  },
+  pinakas_tag3: { en: "For restaurants",   el: "Για εστιατόρια"      },
   ora_login: { en: "Log in — soon", el: "Σύνδεση — σύντομα" },
   ora_login_note: {
+    en: "Want early access? Get in touch.",
+    el: "Θες πρόωρη πρόσβαση; Επικοινώνησε.",
+  },
+
+  pinakas_login: { en: "Log in — soon", el: "Σύνδεση — σύντομα" },
+  pinakas_login_note: {
     en: "Want early access? Get in touch.",
     el: "Θες πρόωρη πρόσβαση; Επικοινώνησε.",
   },
